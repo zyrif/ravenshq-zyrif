@@ -19,31 +19,31 @@ export default new Router({
       meta: { order: 1 }
     },
     {
-      path: '/',
+      path: '/skills',
       name: 'skills',
       component: Skills,
       meta: { order: 2 }
     },
     {
-      path: '/',
+      path: '/projects',
       name: 'projects',
       component: Projects,
       meta: { order: 3 }
     },
     {
-      path: '/',
+      path: '/education',
       name: 'education',
       component: Education,
       meta: { order: 4 }
     },
     {
-      path: '/',
+      path: '/experience',
       name: 'experience',
       component: Experience,
       meta: { order: 5 }
     },
     {
-      path: '/',
+      path: '/interests',
       name: 'interests',
       component: Interests,
       meta: { order: 6 }

@@ -83,7 +83,7 @@
 <style scoped>
 
 .v-list {
-    margin-top: 65%
+    margin-top: 50%
 }
 
 .v-list-item__title {
