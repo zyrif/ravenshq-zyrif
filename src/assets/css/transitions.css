@@ -1,24 +1,35 @@
+/*************************** Slide css and keyframes ****************************/
+
+.slide-up-leave-active {
+    /* -webkit-animation: moveToTop .6s ease both; */
+    animation: fadeOut .2s ease both
+}
+
 .slide-up-enter {
+    /* -webkit-animation: fadeIn .6s ease .6s both; */
+    animation: moveFromBottom .6s ease .4s
+}
+
+.slide-down-leave-active {
+    /* -webkit-animation: moveToBottom .6s ease both; */
+    animation: fadeOut 0.2s ease both
+}
+
+.slide-down-enter {
+    /* -webkit-animation: fadeIn .6s ease .6s both; */
+    animation: moveFromTop 0.6s ease .4s
+}
+
+/* .slide-down-enter, .slide-up-leave-active {
     -webkit-animation: moveFromBottom .6s ease both;
     animation: moveFromBottom .6s ease both
 }
 
-.slide-down-leave-active {
-    -webkit-animation: moveToTop .6s ease both;
-    animation: moveToTop .6s ease both
-}
 
-.slide-down-enter {
+.slide-up-enter, .slide-down-leave-active {
     -webkit-animation: moveFromTop .6s ease both;
     animation: moveFromTop .6s ease both
-}
-
-.slide-up-leave-active {
-    -webkit-animation: moveToBottom .6s ease both;
-    animation: moveToBottom .6s ease both
-}
-
-
+} */
 
 
 @keyframes moveFromBottom {
@@ -39,7 +50,7 @@
 	to { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
 }
 
-@-webkit-keyframes moveFromBottom {
+/* @-webkit-keyframes moveFromBottom {
     from { -webkit-transform: translateY(100%); }    
 }
 
@@ -55,4 +66,27 @@
 @-webkit-keyframes moveToTop {
     from { }
 	to { -webkit-transform: translateY(-100%); }
+} */
+
+
+
+
+/******************************************* Fade css and keyframes *******************************/
+/* .fade-enter-active, .fade-leave-active {
+    animation: fadeIn 1s ease 1s;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+} */
+
+
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1;}
+    100% {opacity: 0;}
 }

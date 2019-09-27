@@ -1,9 +1,11 @@
 <template>
+  <transition name="fade" mode="out-in">
     <v-container class="fill-height experience">
-        <div class="page">
-            <h1>Experience</h1>
-        </div>
+      <div class="page">
+        <h1>Experience</h1>
+      </div>
     </v-container>
+  </transition>
 </template>
 
 <script>
@@ -12,7 +14,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .container.experience {
     background-color: #222;
 }

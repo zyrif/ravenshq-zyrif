@@ -1,8 +1,9 @@
 <template>
-  <v-app class="theme--dark">
+  <v-app>
     <navbar />
     <v-content>
-      <transition v-bind:name="transitionName">
+      <transition v-bind:name="transitionName" mode="out-in"
+      >
         <router-view />
       </transition>
     </v-content>
@@ -22,15 +23,23 @@ export default {
   components: {
     Navbar
   },
-  beforeRouteUpdate (to, from, next) {
-    const toOrder = to.meta.order
-    const fromOrder = from.meta.order
-    this.transitionName = toOrder < fromOrder ? 'slide-down' : 'slide-up'
-    next()
+  watch: {
+    $route (to, from) {
+      const toOrder = to.meta.order
+      const fromOrder = from.meta.order
+      this.transitionName = toOrder < fromOrder ? 'slide-down' : 'slide-up'
+    }
   }
+  // beforeRouteUpdate (to, from, next) {
+  //   const toOrder = to.meta.order
+  //   const fromOrder = from.meta.order
+  //   console.log("toorder: " + toOrder + "fromorder: " + fromOrder)
+  //   this.transitionName = toOrder < fromOrder ? 'slide-down' : 'slide-up'
+  //   next()
+  // }
 }
 </script>
 
 <style lang="scss">
-@import 'src/assets/css/transitions.css';
+@import 'src/assets/css/transitions';
 </style>

@@ -30,7 +30,6 @@
     <v-navigation-drawer
       v-model="drawer"
       app
-      dark
       permanent
       :mini-variant="$vuetify.breakpoint.smAndDown"
       mini-variant-width="100"
@@ -48,7 +47,7 @@
                 active-class="white--text"
               >
                 <v-list-item-icon v-if="$vuetify.breakpoint.smAndDown">
-                  <v-icon dark>
+                  <v-icon>
                     {{ item.icon }}
                   </v-icon>
                 </v-list-item-icon>
@@ -73,12 +72,12 @@
       return {
         drawer: false,
         drawerItems: [
-          { icon: 'mdi-account-circle-outline', title: 'About', route: '/' },
+          { icon: 'mdi-account-circle', title: 'About', route: '/' },
           { icon: 'mdi-tools', title: 'Skills', route: '/skills' },
-          { icon: 'mdi-monitor', title: 'Projects', route: '/projects' },
-          { icon: 'mdi-monitor', title: 'Education', route: '/education' },
-          { icon: 'mdi-monitor', title: 'Experience', route: '/experience' },
-          { icon: 'mdi-monitor', title: 'Interests', route: '/interests' }
+          { icon: 'mdi-lightbulb-on', title: 'Projects', route: '/projects' },
+          { icon: 'mdi-school', title: 'Education', route: '/education' },
+          { icon: 'mdi-briefcase', title: 'Experience', route: '/experience' },
+          { icon: 'mdi-account-heart', title: 'Interests', route: '/interests' }
         ]
       }
     },
