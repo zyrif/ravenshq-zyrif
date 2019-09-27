@@ -4,6 +4,8 @@
       app
       flat
       short
+      dark
+      color="rgba(0,0,0,0)"
     >
       <v-app-bar-nav-icon
         class="grey--text"
@@ -29,29 +31,38 @@
       v-model="drawer"
       app
       dark
-      permanent=""
+      permanent
+      :mini-variant="$vuetify.breakpoint.smAndDown"
+      mini-variant-width="100"
       class="blue"
     >
-      <v-list nav>
-        <v-list-item
-          v-for="item in drawerItems"
-          v-bind:key="item.title"
-          v-ripple
-          router
-          v-bind:to="item.route"
-          active-class="white--text"
-        >
-          <!-- <v-list-item-icon>
-            <v-icon dark>
-              {{ item.icon }}
-            </v-icon>
-          </v-list-item-icon> -->
+      <v-container class="fill-height">
+        <v-row align="center" justify="center">
+          <v-col>
+            <v-list nav>
+              <v-list-item
+                v-for="item in drawerItems"
+                v-bind:key="item.title"
+                router
+                v-bind:to="item.route"
+                active-class="white--text"
+              >
+                <v-list-item-icon v-if="$vuetify.breakpoint.smAndDown">
+                  <v-icon dark>
+                    {{ item.icon }}
+                  </v-icon>
+                </v-list-item-icon>
 
-          <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
+                <v-list-item-content v-else>
+                  <v-list-item-title>{{ item.title }}</v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
+          </v-col>
+        </v-row>
+
+      </v-container>
+
     </v-navigation-drawer>
   </nav>
 </template>
@@ -81,10 +92,6 @@
 
 
 <style scoped>
-
-.v-list {
-    margin-top: 50%
-}
 
 .v-list-item__title {
     text-align: center

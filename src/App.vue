@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="theme--dark">
     <navbar />
     <v-content>
       <transition v-bind:name="transitionName">
@@ -32,5 +32,5 @@ export default {
 </script>
 
 <style lang="scss">
-
+@import 'src/assets/css/transitions.css';
 </style>
