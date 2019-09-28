@@ -43,6 +43,7 @@
                 v-for="item in drawerItems"
                 v-bind:key="item.title"
                 router
+                v-bind:ripple="$vuetify.breakpoint.mdAndUp"
                 v-bind:to="item.route"
                 active-class="white--text"
               >
