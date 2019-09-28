@@ -7,7 +7,7 @@
 
 .slide-up-enter-active {
     /* -webkit-animation: fadeIn .6s ease .6s both; */
-    animation: fadeIn .2s ease .6s
+    animation: fadeIn .4s ease .6s
 }
 
 .slide-down-leave-active {
@@ -17,7 +17,7 @@
 
 .slide-down-enter-active {
     /* -webkit-animation: fadeIn .6s ease .6s both; */
-    animation: fadeIn .2s ease .6s
+    animation: fadeIn .4s ease .6s
 }
 
 /* .slide-down-enter, .slide-up-leave-active {
