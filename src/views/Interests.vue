@@ -3,6 +3,14 @@
     <v-container class="fill-height interests">
       <div class="page">
         <h1>Interests</h1>
+        <ul>
+          <li> Crafting Beautiful UI </li>
+          <li> Architecting & Designing Systems (especially cloud-based systems) </li>
+          <li> AI, particularly Cognitive  </li>
+          <li> Applying Computer Vision </li>
+          <li> Developing for Android </li>
+          <li> Solutions powered by IoT </li>
+        </ul>
       </div>
     </v-container>
   </transition>
@@ -16,6 +24,6 @@ export default {
 
 <style>
 .container.interests {
-    background-color: #333;
+    background-color: #222;
 }
 </style>
