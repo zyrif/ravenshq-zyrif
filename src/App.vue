@@ -2,8 +2,7 @@
   <v-app>
     <navbar />
     <v-content>
-      <transition v-bind:name="transitionName" mode="out-in"
-      >
+      <transition v-bind:name="transitionName">
         <router-view />
       </transition>
     </v-content>
