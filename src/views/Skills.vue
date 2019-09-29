@@ -11,13 +11,25 @@
               <li> PHP </li>
             </ul>
 
-            <h3>Tools & Frameworks </h3>
+            <h3>Services, Tools & Frameworks </h3>
             <ul>
               <li> Django </li>
               <li> Vue.js </li>
               <li> Vuetify </li>
               <li> ASP.NET MVC </li>
               <li> Wordpress </li>
+              <li> Node </li>
+              <li> Dlib </li>
+              <li> Keras </li>
+              <li> Tensorflow </li>
+              <li> Git </li>
+              <li> Github </li>
+              <li> Bitbucket </li>
+              <li> Visual Studio Code </li>
+              <li> Anaconda </li>
+              <li> SASS </li>
+              <li> Webpack </li>
+              <li> Babel </li>
             </ul>
         </div>
     </v-container>
