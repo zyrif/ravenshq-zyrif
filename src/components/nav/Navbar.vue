@@ -32,7 +32,6 @@
       app
       permanent
       :mini-variant="$vuetify.breakpoint.smAndDown"
-      mini-variant-width="100"
       class="blue"
     >
       <v-container class="fill-height">
