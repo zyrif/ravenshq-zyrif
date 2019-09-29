@@ -13,6 +13,7 @@
 
 <script>
   import Navbar from '@/components/nav/Navbar.vue'
+  import _ from 'lodash'
 
 export default {
   name: 'zyrif.ravenshq.net',
@@ -65,7 +66,7 @@ export default {
     },
 
     // navigate functionality
-    goToNextPage () {
+    goToNextPage: _.throttle( function () {
       let routesObj = this.$router.options.routes
       let totalRoutes = routesObj.length
       // naming it nextOrder because it basically acts like one,
@@ -76,8 +77,8 @@ export default {
         this.$router.push(routesObj[nextOrder].path)
       }
 
-    },
-    goToPreviousPage () {
+    }, 800, { 'trailing': false }),
+    goToPreviousPage: _.throttle( function () {
       let routesObj = this.$router.options.routes
       // naming it nextOrder because it basically acts like one,
       // since the meta order numbering starts at 1
@@ -86,7 +87,7 @@ export default {
       if (nextOrder > 1) {
         this.$router.push(routesObj[nextOrder - 2].path)
       }
-    }
+    }, 800, { 'trailing': false })
   }
 }
 </script>
