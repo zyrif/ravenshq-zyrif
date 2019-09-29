@@ -1,29 +1,5 @@
 # ravenshq-zyrif
 
-## Project setup
-```
-npm install
-```
+[![Netlify Status](https://api.netlify.com/api/v1/badges/24fb3245-bb33-40f1-9aa2-904b652e2a9c/deploy-status)](https://app.netlify.com/sites/ravenshq-zyrif/deploys)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+** Personal Portfolio Site **
