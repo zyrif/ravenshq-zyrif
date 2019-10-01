@@ -5,11 +5,13 @@
         <h1>Interests</h1>
         <ul>
           <li> Crafting Beautiful UI </li>
-          <li> Architecting & Designing Systems (especially cloud-based systems) </li>
-          <li> AI, particularly Cognitive  </li>
-          <li> Applying Computer Vision </li>
-          <li> Developing for Android </li>
-          <li> Solutions powered by IoT </li>
+          <li> AI and IoT Powered Solutions </li>
+          <li> Cognitive Computation </li>
+          <li> Computer Vision </li>
+          <li> Designing Cloud-based Systems </li>
+          <li> Linux Kernel Development </li>
+          <li> FPGA Programming </li>
+          <li> Overall, Learning New Stuff </li>
         </ul>
       </div>
     </v-container>
