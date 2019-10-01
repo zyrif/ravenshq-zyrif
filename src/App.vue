@@ -42,10 +42,10 @@ export default {
     // execute when scroll is detected
     handleScroll (event) {
       if (event.deltaY > 0) {
-        this.goToNextPage()
+        this.goToPage('next')        
       }
       else if (event.deltaY < 0) {
-        this.goToPreviousPage()
+        this.goToPage('previous')
       }
       else {
         console.warn("mousewheel deltaY should not be zero")
@@ -55,10 +55,10 @@ export default {
     // execute when touch is detected
     swipeHandler (direction) {
       if (direction == 'top') {
-        this.goToNextPage()
+        this.goToPage('next')
       }
       else if (direction == 'bottom') {
-        this.goToPreviousPage()
+        this.goToPage('previous')
       }
       else {
         //
@@ -66,28 +66,22 @@ export default {
     },
 
     // navigate functionality
-    goToNextPage: _.throttle( function () {
+    goToPage: _.throttle( function (direction) {
       let routesObj = this.$router.options.routes
       let totalRoutes = routesObj.length
       // naming it nextOrder because it basically acts like one,
       // since the meta order numbering starts at 1
       let nextOrder = this.$route.meta.order
 
-      if (nextOrder < totalRoutes) {
+      if (direction == 'next' && (nextOrder < totalRoutes)) {
         this.$router.push(routesObj[nextOrder].path)
       }
 
-    }, 800, { 'trailing': false }),
-    goToPreviousPage: _.throttle( function () {
-      let routesObj = this.$router.options.routes
-      // naming it nextOrder because it basically acts like one,
-      // since the meta order numbering starts at 1
-      let nextOrder = parseInt(this.$route.meta.order)
-
-      if (nextOrder > 1) {
+      if (direction == 'previous' && (nextOrder > 1)) {
         this.$router.push(routesObj[nextOrder - 2].path)
       }
-    }, 800, { 'trailing': false })
+
+    }, 800, { 'trailing': false }),
   }
 }
 </script>

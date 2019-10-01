@@ -4,8 +4,9 @@
       <div class="page">
         <h1>Muhammad Rubaiyat</h1>
         <div>
-          <p> Software Enginner based on Dhaka / Bangladesh </p>
+          <p> Mover of Bits | Arranger of Pixels </p>
           <p> Likes to work with cutting-edge technologies to solve interesting problems </p>
+          <p> Based on Dhaka / Bangladesh </p>
         </div>
         <span> LinkedIn </span>
         <span> Github </span>
