@@ -27,7 +27,6 @@
               <li> Bitbucket </li>
               <li> Visual Studio Code </li>
               <li> Anaconda </li>
-              <li> SASS </li>
               <li> Webpack </li>
               <li> Babel </li>
             </ul>
