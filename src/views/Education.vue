@@ -1,23 +1,27 @@
 <template>
   <transition name="fade" mode="out-in">
     <v-container class="fill-height education">
-      <div class="page">
-          <h1>Education</h1>
-          <p> BSc CSE </p>
-          <p> American International University - Bangladesh </p>
-          <p> HSC </p>
-          <p> Cantonment Public School & College </p>
-          <p> SSC </p>
-          <p> Cantonment Public School & College </p>
-      </div>
+       <edu-items v-bind:values="this.items" />
     </v-container>
   </transition>
 </template>
 
 <script>
-export default {
-    
-}
+  import EduItems from "@/components/education/EduItems.vue"
+  export default {
+    components: {
+      EduItems
+    },
+    data () {
+      return {
+        items: [
+          {title: 'B.Sc in Computer Science & Engineering', institution: 'American International University-Bangladesh', date: '2014 - 2018 '},
+          {title: 'HSC', institution: 'Cantonment Public School & College, Rangpur', date: '2013'},
+          {title: 'SSC', institution: 'Cantonment Public School & College, Rangpur', date: '2011'}
+        ]
+      }
+    }
+  }
 </script>
 
 <style>
