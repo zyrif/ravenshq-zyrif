@@ -12,33 +12,71 @@
               <span class="font-weight-light">ubaiyat</span>
           </v-col>
         </v-row>
-        <div class="mx-3">
-          <p class="my-2">
-            <span>Mover of Bits</span>
-            <span class="blue--text mx-4 font-weight-black">|</span>
-            <span>Arranger of Pixels</span>
-          </p>
-          <p class="my-2">Likes to work with cutting-edge technologies to solve interesting problems</p>
-          <p class="my-2">Based on Dhaka / Bangladesh</p>
-        </div>
+        <v-row no-gutters class="mx-2 px-2 my-2">
+          <v-col cols="auto">Mover of Bits</v-col>
+          <v-col cols="auto" class="blue--text mx-3 font-weight-black">|</v-col>
+          <v-col cols="auto">Arranger of Pixels</v-col>
+        </v-row>
+        <v-row no-gutters class="mx-2 px-2 my-2">
+          <v-col cols="auto">Likes to work with cutting-edge technologies to solve interesting problems</v-col>
+        </v-row>
+        <v-row no-gutters class="mx-2 px-2 my-2">
+          <v-col cols="auto">Based on Dhaka</v-col>
+           <v-col cols="auto"  class="blue--text mx-2 font-weight-black">/</v-col> 
+          <v-col>Bangladesh</v-col>
+        </v-row>
         <!-- <span> LinkedIn </span>
         <span> Github </span>
         <span> Email </span>
         <span> Resume </span>-->
-        <v-row>
-          <v-col cols="12">
-            <span>
-              <v-btn text>LinkedIn</v-btn>
-            </span>
-            <span>
-              <v-btn text>Github</v-btn>
-            </span>
-            <span>
-              <v-btn text>Email</v-btn>
-            </span>
-            <span>
-              <v-btn text>Resume</v-btn>
-            </span>
+        <v-row class="mx-0">
+          <v-col cols="auto" class="mx-0 px-1 py-0">
+              <v-hover v-slot:default="{ hover }">
+                <v-btn 
+                  text 
+                  tile 
+                  max-width="90" 
+                  v-bind:class="hover ? 'blue--text' : 'white--text'"
+                >
+                  LinkedIn
+                </v-btn>
+              </v-hover>
+          </v-col>
+          <v-col cols="auto" class="mx-0 pa-0">
+              <v-hover v-slot:default="{ hover }">
+                <v-btn 
+                  text 
+                  tile 
+                  max-width="90" 
+                  v-bind:class="hover ? 'blue--text' : 'white--text'"
+                >
+                  Github
+                </v-btn>
+              </v-hover>
+          </v-col>
+          <v-col cols="auto" class="mx-0 pa-0">
+              <v-hover v-slot:default="{ hover }">
+                <v-btn 
+                  text 
+                  tile 
+                  max-width="90" 
+                  v-bind:class="hover ? 'blue--text' : 'white--text'"
+                >
+                  Email
+                </v-btn>
+              </v-hover>
+          </v-col>
+          <v-col cols="auto" class="mx-0 pa-0">
+              <v-hover v-slot:default="{ hover }">
+                <v-btn 
+                  text 
+                  tile 
+                  max-width="90" 
+                  v-bind:class="hover ? 'blue--text' : 'white--text'"
+                >
+                  Resume
+                </v-btn>
+              </v-hover>
           </v-col>
         </v-row>
       </div>
