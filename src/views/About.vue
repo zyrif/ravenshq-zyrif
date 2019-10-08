@@ -2,12 +2,16 @@
   <transition name="fade" mode="out-in">
     <v-container class="fill-height about">
       <div class="page">
-        <h1 class="display-2 mx-3 my-4">
-          <span class="blue--text">M</span>
-          <span class="font-weight-light mr-2">uhammad</span>
-          <span class="blue--text">R</span>
-          <span class="font-weight-light">ubaiyat</span>
-        </h1>
+        <v-row class="mx-2 my-4">
+          <v-col cols="auto" class="display-2 pa-1">
+              <span class="blue--text">M</span>
+              <span class="font-weight-light">uhammad</span>
+          </v-col>
+          <v-col cols="auto" class="display-2 pa-1">
+              <span class="blue--text">R</span>
+              <span class="font-weight-light">ubaiyat</span>
+          </v-col>
+        </v-row>
         <div class="mx-3">
           <p class="my-2">
             <span>Mover of Bits</span>
