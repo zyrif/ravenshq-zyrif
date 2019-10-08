@@ -26,7 +26,7 @@
           <v-col>Bangladesh</v-col>
         </v-row>
 
-        <v-row class="mx-0">
+        <v-row class="mx-1">
           <v-col cols="auto" class="mx-0 px-1 py-0">
               <v-hover v-slot:default="{ hover }">
                 <v-btn 
@@ -66,19 +66,6 @@
                 </v-btn>
               </v-hover>
           </v-col>
-          <v-col cols="auto" class="mx-0 pa-0">
-              <v-hover v-slot:default="{ hover }">
-                <v-btn 
-                  text 
-                  tile 
-                  max-width="90" 
-                  v-bind:class="hover ? 'blue--text' : 'white--text'"
-                  v-on:click="getResume"
-                >
-                  Resume
-                </v-btn>
-              </v-hover>
-          </v-col>
         </v-row>
       </div>
     </v-container>
@@ -96,9 +83,6 @@ export default {
     },
     mailZyrif() {
       window.open("mailto:zyrif@ravenshq.net", "_blank")
-    },
-    getResume() {
-      window.open("https://drive.google.com", "_blank")
     }
   }
 };
