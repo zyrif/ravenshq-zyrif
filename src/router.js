@@ -16,37 +16,55 @@ export default new Router({
       path: '/',
       name: 'about',
       component: About,
-      meta: { order: 1 }
+      meta: {
+        order: 1,
+        title: 'whoami — Zyrif'
+      }
     },
     {
       path: '/skills',
       name: 'skills',
       component: Skills,
-      meta: { order: 2 }
+      meta: {
+        order: 2,
+        title: 'Skills — Zyrif'
+      }
     },
     {
       path: '/projects',
       name: 'projects',
       component: Projects,
-      meta: { order: 3 }
+      meta: {
+        order: 3,
+        title: 'Projects — Zyrif'
+      }
     },
     {
       path: '/education',
       name: 'education',
       component: Education,
-      meta: { order: 4 }
+      meta: {
+        order: 4,
+        title: 'Education — Zyrif'
+      }
     },
     {
       path: '/experience',
       name: 'experience',
       component: Experience,
-      meta: { order: 5 }
+      meta: {
+        order: 5,
+        title: 'Experience — Zyrif'
+      }
     },
     {
       path: '/interests',
       name: 'interests',
       component: Interests,
-      meta: { order: 6 }
+      meta: {
+        order: 6,
+        title: 'Interests — Zyrif'
+      }
     }
   ]
 })
