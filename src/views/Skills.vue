@@ -4,8 +4,8 @@
       <div class="page">
         <h3>Languages </h3>
         <skill-grid v-bind:values="this.languageList" v-bind:chip="$vuetify.breakpoint.mdAndDown" />
-
-        <h3> Frameworks, Tools and Services </h3>
+        <br />
+        <h3> Frameworks, Libs, Tools and Services </h3>
         <skill-grid v-bind:values="this.ftsCombinedList" v-bind:chip="$vuetify.breakpoint.mdAndDown" />
       </div>
     </v-container>
@@ -28,14 +28,16 @@ export default {
         {'name': 'Vue.js', 'icon': 'icon', 'color': 'primary', 'link': '#'},
         {'name': 'Vuetify', 'icon': 'icon', 'color': 'primary', 'link': '#'},
         {'name': 'ASP.NET MVC', 'icon': 'icon', 'color': 'primary', 'link': '#'},
+      ],
+      libraryList: [
+        {'name': 'jQuery', 'icon': 'icon', 'color': 'primary', 'link': '#'}, 
       ], 
       toolsList: [
         {'name': 'Git', 'icon': 'icon', 'color': 'primary', 'link': '#'},
         {'name': 'Node', 'icon': 'icon', 'color': 'primary', 'link': '#'},
         {'name': 'VS Code', 'icon': 'icon', 'color': 'primary', 'link': '#'},
+        {'name': 'Trello', 'icon': 'icon', 'color': 'primary', 'link': '#'},
         {'name': 'Anaconda', 'icon': 'icon', 'color': 'primary', 'link': '#'},
-        {'name': 'Webpack', 'icon': 'icon', 'color': 'primary', 'link': '#'},
-        {'name': 'Babel', 'icon': 'icon', 'color': 'primary', 'link': '#'},
         {'name': 'Dlib', 'icon': 'icon', 'color': 'primary', 'link': '#'},
         {'name': 'Keras', 'icon': 'icon', 'color': 'primary', 'link': '#'},
         {'name': 'Tensorflow', 'icon': 'icon', 'color': 'primary', 'link': '#'},
@@ -53,7 +55,7 @@ export default {
   },
   computed: {
     ftsCombinedList () {
-      return this.frameworksList.concat(this.toolsList, this.servicesList)
+      return this.frameworksList.concat(this.libraryList, this.toolsList, this.servicesList)
     }
   }
 }
