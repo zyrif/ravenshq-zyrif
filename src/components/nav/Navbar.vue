@@ -44,6 +44,7 @@
                 router
                 v-bind:ripple="$vuetify.breakpoint.mdAndUp"
                 v-bind:to="item.route"
+                replace
                 active-class="white--text"
               >
                 <v-list-item-icon v-if="$vuetify.breakpoint.smAndDown">

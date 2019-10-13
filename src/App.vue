@@ -74,11 +74,11 @@ export default {
       let nextOrder = this.$route.meta.order
 
       if (direction == 'next' && (nextOrder < totalRoutes)) {
-        this.$router.push(routesObj[nextOrder].path)
+        this.$router.replace(routesObj[nextOrder].path)
       }
 
       if (direction == 'previous' && (nextOrder > 1)) {
-        this.$router.push(routesObj[nextOrder - 2].path)
+        this.$router.replace(routesObj[nextOrder - 2].path)
       }
 
     }, 800, { 'trailing': false }),
